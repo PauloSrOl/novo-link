@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+                  
+}
+
+body{
+    background: linear-gradient(to right, #001980, #3b6f97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;   
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+.container{
+  
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.degrade{
+    background: linear-gradient(to right, #0d96ff73, #040f3bad);
+}
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img{
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 300;
+    
+}
+
+
+
+.bungee-tint-regular {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #fff;
+  }
+
+.uniquifier {
+
+    color: #fff;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    font-variation-settings:
+      "MORF" 20,
+      "SHLN" 30;
+    
+  }
+
+section.botoes-links{
+    display: flex;
+    flex-direction: column;  
+    gap: 20px;
+}
+
+a.link button{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+
+a.link button:hover, footer a.btn-footer:hover{
+    transform: scale(1.05);
+}
+a.link i{
+    font-size: 1.5em;
+}
+
+
+
+
+.img-perfil{
+    max-width: 500px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 20px;
+   
+}
+
+.slides {
+    display: flex;
+    width: 100%; /* Tamanho total para todos os slides (3 slides, 100% cada) */
+    transition: transform 0.6s ease-in-out; /* Transição suave ao deslizar */
+}
+
+.slide-link{
+    display: flex;
+    flex: 1 0 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #140f5cea;
+    border-radius: 15px;
+    transition: transform 0.3s ease,;
+}
+
+.card:hover{
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgb(0, 0, 0 0.5);
+    transition: 0.5s ease;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .prev, .next {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    margin: 30px;
+
+}
+footer a.btn-footer{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .2s;
+}
